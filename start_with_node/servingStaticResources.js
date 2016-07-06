@@ -26,6 +26,7 @@ http.createServer(function(req, res){
 	switch(path){
 		case '':
 			serveStaticFile(res, '/public/home.html', 'text/html');
+			break;
 		case '/about':
 			serveStaticFile(res, '/public/about.html', 'text/html');
 			break;
